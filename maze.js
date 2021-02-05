@@ -6,9 +6,9 @@ var startTime = new Date();
 //EDITABLE CONSTANTS
 const MzX = 10; //X dimension of Maze
 const MzY = 10; //Y dimension of Maze
-var PICNUM = 10; //number of picture walls
+var PICNUM = 15; //number of picture walls
 var POLYNUM = 2; //number of polyhedra
-var OPENNUM = 3; //number of floating opengl's
+var OPENNUM = 5; //number of floating opengl's
 
 POLYNUM = Math.min(POLYNUM,MzX*MzY-4);
 OPENNUM = Math.min(OPENNUM,MzX*MzY-4-POLYNUM);
