@@ -216,9 +216,9 @@ window.onload = function() {
 						const startTexture = gl.createTexture();
 						gl.activeTexture(gl.TEXTURE0+4);
 						gl.bindTexture(gl.TEXTURE_2D, startTexture);
-						gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA32UI, gl.UNSIGNED_BYTE, startImg);
+						gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, startImg);
 						gl.generateMipmap(gl.TEXTURE_2D);
-						gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+						gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
 
 						const finImg = new Image();
 						finImg.onload = function() {
